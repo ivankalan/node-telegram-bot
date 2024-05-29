@@ -1,6 +1,8 @@
 const TelegramBot = require('node-telegram-bot-api');
 const k8s = require('@kubernetes/client-node');
 
+require('dotenv').config();
+
 const token = process.env.TOKEN;
 const bot = new TelegramBot(token, {polling: true});
 
